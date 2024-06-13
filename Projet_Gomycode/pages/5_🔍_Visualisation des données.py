@@ -12,7 +12,7 @@ def afficher_data_visualisation():
     st.title("Visualisation Des Données")
 
     # Chargement du fichier avec read_csv
-    df = pd.read_csv("Incidence_Maladie.csv")
+    df = pd.read_csv("Projet_Gomycode/Incidence_Maladie.csv")
 
     # Conversion des données en types appropriés
     df["INCIDENCE SUR LA POPULATION GENERALE (%)"] = pd.to_numeric(df["INCIDENCE SUR LA POPULATION GENERALE (%)"],
