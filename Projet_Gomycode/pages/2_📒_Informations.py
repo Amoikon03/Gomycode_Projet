@@ -7,7 +7,7 @@ st.title("Les Informations Et Leurs Spécificités")
 
 
 # Chargement de données du fichier csv
-df = pd.read_csv("Incidence.csv")
+df = pd.read_csv("Projet_Gomycode/Incidence.csv")
 
 
 # Définir les styles CSS pour le conteneur
