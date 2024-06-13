@@ -16,7 +16,7 @@ def main():
 
 
 def afficher_informations_generales(df):
-    st.write("### **1 - Présenter un aperçu complet du jeu de données** ")
+    st.write("### **1 - Présenter un aperçu complet du jeu de données**")
     st.write(df.head())
     st.write(df.info())
 
@@ -26,17 +26,17 @@ def supprimer_doublons(df):
     duplicates = df[duplique]
 
     # Afficher les lignes dupliquées
-    st.write("### **2 - Lignes dupliquées** ")
+    st.write("### **2 - Lignes dupliquées**")
     st.write(duplicates)
 
-    st.write("### **3 - Supprimer les valeurs dupliquées, s'ils existent** ")
+    st.write("### **3 - Supprimer les valeurs dupliquées, s'ils existent**")
     df.drop_duplicates(inplace=True)
     st.write("**Les lignes dupliquées ont été supprimées avec succès.**")
 
 
 def traiter_valeurs_manquantes(df):
 
-    st.write("### **3 - Traiter les valeurs manquantes, si elles existent** ")
+    st.write("### **3 - Traiter les valeurs manquantes, si elles existent**")
     st.write("#### **Données manquantes dans le DataFrame**")
     st.write(df.isna().sum().T)
 
@@ -49,7 +49,7 @@ def traiter_valeurs_manquantes(df):
     st.write("### **5 - Afficher le DataFrame après le traitement des valeurs manquantes**")
     st.write(df.head())
 
-    st.write("### **6 - Encoder les variables catégorielles** ")
+    st.write("### **6 - Encoder les variables catégorielles**")
 
     # Fonction pour encoder les variables catégorielles
     def preprocess_data(df):
@@ -75,7 +75,7 @@ def traiter_valeurs_manquantes(df):
 def enregistrer_donnees_pretraitees(df):
     df.to_pickle("Incidence_Maladie.pkl")
     # Charger une image depuis votre système de fichiers
-    image_path = "paludisme.jpg"
+    image_path = "Projet_Gomycode/paludisme.jpg"
 
     # Afficher l'image en arrière-plan
     # Redimensionner et afficher l'image en arrière-plan
