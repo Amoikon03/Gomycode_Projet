@@ -9,7 +9,7 @@ def afficher_make_visualisation():
 
     # Chargement des données prétraitées dans data manipulation
     # Chargement du fichier avec read_csv
-    df = pd.read_csv("Incidence_Maladie.csv")
+    df = pd.read_csv("Projet_Gomycode/Incidence_Maladie.csv")
 
 
     # Ajouter un titre
