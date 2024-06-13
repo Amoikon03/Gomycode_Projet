@@ -7,7 +7,7 @@ def main():
     st.title("Manipulation Des Données")
 
     # Charger le fichier CSV
-    df = pd.read_csv("Incidence.csv")
+    df = pd.read_csv("Projet_Gomycode/Incidence.csv")
 
     afficher_informations_generales(df)
     supprimer_doublons(df)
