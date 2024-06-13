@@ -9,7 +9,7 @@ st.title("Exploration Des Données")
 # Charger le fichier CSV
 @st.cache_data
 def load_data():
-    return pd.read_csv("Incidence.csv")
+    return pd.read_csv("Projet_Gomycode/Incidence.csv")
 
 df = load_data()
 
@@ -39,7 +39,7 @@ for column in df.select_dtypes(include=['int64', 'float64']).columns:
         st.write(outliers)
 
 # Afficher les statistiques descriptives pour les colonnes numériques
-st.write("### **Statistiques descriptives pour les variables numériques :**")
+st.write("### **Statistiques descriptives pour les variables numériques**")
 st.write(df.describe())
 
 # Lien vers les autres pages ou sections
