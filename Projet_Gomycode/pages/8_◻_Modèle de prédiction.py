@@ -103,7 +103,7 @@ st.write(" ")
 st.write(" ")
 
 # Charger le DataFrame à partir du fichier pickle
-data = load_dataframe("Incidence_Maladie.pkl")
+data = load_dataframe("Projet_Gomycode/Incidence_Maladie.pkl")
 
 # Créer une colonne latérale pour les paramètres
 with st.sidebar:
