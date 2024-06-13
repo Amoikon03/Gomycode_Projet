@@ -30,10 +30,10 @@ def afficher_data_modelisation():
     st.title("Modélisation Des Données")
 
     # Chargement des données
-    df = pk.load(open("Incidence_Maladie.pkl", "rb"))
+    df = pk.load(open("Projet_Gomycode/Incidence_Maladie.pkl", "rb"))
 
     # Créer un bouton pour afficher un message d'information
-    show_info = st.checkbox("**Cliquez ici pour cacher l'information.**", value=True)
+    show_info = st.checkbox("**Cliquez ici pour cacher l'information**", value=True)
 
     if show_info:
         # Ajout du CSS personnalisé
