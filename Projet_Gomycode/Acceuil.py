@@ -26,7 +26,7 @@ def paragraphe(texte):
 st.title("Incidence De Maladies Sur La Population De 2012 à 2015")
 
 # Image illustrative de l'application
-image_with_caption("moustique_tigre.jpg", "Moustique-Tigre.jpg")
+image_with_caption("Projet_Gomycode/moustique_tigre.jpg", "Moustique-Tigre.jpg")
 
 # Description de l'application
 paragraphe("""
