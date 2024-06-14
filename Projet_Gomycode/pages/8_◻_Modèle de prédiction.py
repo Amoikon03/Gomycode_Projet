@@ -163,7 +163,7 @@ with st.sidebar:
     bouton_predire = st.button("Prédire")
 
 # Charger le DataFrame à partir du fichier pickle en utilisant l'année sélectionnée
-data = load_dataframe("Incidence_Maladie.pkl", year)
+data = load_dataframe("Projet_Gomycode/Incidence_Maladie.pkl", year)
 
 # Créer une DataFrame pour les caractéristiques à partir des sélections de l'utilisateur
 features = pd.DataFrame({
