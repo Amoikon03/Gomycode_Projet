@@ -5,7 +5,7 @@ from PIL import Image
 # Configuration de la page
 st.set_page_config(
     page_title="Incidence De Maladies Sur La Population De 2012 à 2015",
-    page_icon="images.jpg"
+    page_icon="Projet_Gomycode/images.jpg"
 )
 
 # Fonction pour afficher une section avec titre et contenu
