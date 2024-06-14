@@ -194,16 +194,18 @@ st.write(f"Maladie : {disease}")
 # Explication des modèles
 st.subheader("Modèles utilisés")
 st.write("""
-- **Random Forest** : Un ensemble d'arbres de décision qui vote pour la prédiction finale.
-- **Régression Linéaire** : Un modèle qui trouve la meilleure ligne droite à travers les données.
-- **Réseau de Neurones Artificiels (ANN)** : Un modèle complexe qui imite le cerveau humain.
-- **KNN (K-Nearest Neighbors)** : Un modèle qui prédit en fonction des voisins les plus proches dans les données.
+- **Random Forest** : Une collection d'arbres de décision où chaque arbre contribue à la prédiction finale par un vote majoritaire.
+- **Régression Linéaire** : Un modèle qui détermine la ligne droite la mieux adaptée aux données pour faire des prédictions.
+- **Régression Polynomial** : Un modèle qui généralise la régression linéaire en utilisant des courbes au lieu de lignes droites pour s'adapter aux données.
+- **Réseau de Neurones Artificiels (ANN)** : Un modèle sophistiqué qui s'inspire du fonctionnement du cerveau humain pour traiter et analyser les données.
+- **KNN (K-Nearest Neighbors)** : Un modèle qui effectue des prédictions en utilisant les points de données les plus proches dans l'espace de caractéristiques.
 """)
 
 # Affichage des prédictions pour chaque modèle
 st.subheader("Prédictions")
 st.write(f"Incidence prévue (Random Forest) : {format_prediction(prediction_rf_value)}%")
 st.write(f"Incidence prévue (Régression Linéaire) : {format_prediction(prediction_lin_reg_value)}%")
+st.write(f"Prédiction Régression Polynomial : {prediction_poly_reg_value}%")
 st.write(f"Incidence prévue (Réseau de Neurones Artificiels) : {format_prediction(prediction_ann_value)}%")
 st.write(f"Incidence prévue (KNN) : {format_prediction(prediction_knn_value)}%")
 
