@@ -83,7 +83,7 @@ def enregistrer_donnees_pretraitees(df):
 
     # Ajouter du texte au-dessus de l'image
     st.write(
-    "<div style='color: #FFFFFF; background-color: #042B29; padding: 10px;'>"
+    "<div style='color: #FFFFFF; background-color: #051C24; padding: 10px;'>"
     "<b>Les données prétraitées sont sauvegardées dans <span style='color: red;'>Incidence_Maladie</span> au format pickle pour une utilisation ultérieure.</b>"
     "</div>",
     unsafe_allow_html=True
